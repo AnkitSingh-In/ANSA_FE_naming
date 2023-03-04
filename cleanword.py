@@ -4,7 +4,7 @@ def Uppercase(text):
     return text.upper()
 
 def removePunctuation(text):
-    punctuations = ['.', '-', ',', '*',' ', '_','(',')']
+    punctuations = '.-,* _()'
     for punctuation in punctuations:
         text = text.replace(punctuation, '_')
     return text
